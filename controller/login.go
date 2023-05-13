@@ -7,12 +7,12 @@ import (
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/creidef/gorest/config"
-	"github.com/creidef/gorest/database/model"
-	"github.com/creidef/gorest/handler"
-	"github.com/creidef/gorest/lib/middleware"
-	"github.com/creidef/gorest/lib/renderer"
-	"github.com/creidef/gorest/service"
+	"github.com/pilinux/gorest/config"
+	"github.com/pilinux/gorest/database/model"
+	"github.com/pilinux/gorest/handler"
+	"github.com/pilinux/gorest/lib/middleware"
+	"github.com/pilinux/gorest/lib/renderer"
+	"github.com/pilinux/gorest/service"
 )
 
 // Login - issue new JWTs after user:pass verification
