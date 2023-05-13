@@ -73,7 +73,7 @@ func InitDB() *gorm.DB {
 
 	switch driver {
 	case "mysql":
-		dsn := username + ":" + password + "@tcp(" + host + ":" + port + ")/" + database + "?charset=utf8mb4&parseTime=True&loc=Local"
+		dsn := username + ":" + password + "@tcp(" + host + ":" + port + ")/" + database + "?allowNativePasswords=true&charset=utf8mb4&parseTime=True&loc=Local"
 		if sslmode != "disable" {
 			dsn += "&tls=custom"
 			err = InitTLSMySQL()
