@@ -14,7 +14,7 @@ require (
 	github.com/mediocregopher/radix/v4 v4.1.2
 	github.com/mrz1836/postmark v1.4.0
 	github.com/onrik/logrus v0.10.0
-	github.com/pilinux/gorest v1.6.8
+	github.com/pilinux/gorest v1.6.9-0.20230513132822-cecf742ec7e1
 	github.com/pilinux/libgo v0.0.5
 	github.com/pilinux/structs v1.1.1
 	github.com/qiniu/qmgo v1.1.5
@@ -72,5 +72,5 @@ require (
 	golang.org/x/text v0.7.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/driver/sqlite v1.4.4 // indirect
+	gorm.io/driver/sqlite v1.5.0 // indirect
 )
