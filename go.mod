@@ -14,6 +14,7 @@ require (
 	github.com/mediocregopher/radix/v4 v4.1.2
 	github.com/mrz1836/postmark v1.4.0
 	github.com/onrik/logrus v0.10.0
+	github.com/pilinux/gorest v1.6.8
 	github.com/pilinux/libgo v0.0.5
 	github.com/pilinux/structs v1.1.1
 	github.com/qiniu/qmgo v1.1.5
