@@ -6,6 +6,7 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+	"github.com/mediocregopher/radix/v4"
 	"time"
 
 	"github.com/pilinux/gorest/config"
@@ -23,10 +24,7 @@ import (
 
 	// Import SQLite3 database driver
 	// _ "github.com/jinzhu/gorm/dialects/sqlite"
-	"gorm.io/driver/sqlite"
-
-	// Import Redis Driver
-	"github.com/mediocregopher/radix/v4"
+	//"gorm.io/driver/sqlite"
 
 	// Import Mongo driver
 	"github.com/qiniu/qmgo"
@@ -119,19 +117,6 @@ func InitDB() *gorm.DB {
 		})
 		if err != nil {
 			log.WithError(err).Panic("panic code: 154")
-		}
-		// Only for debugging
-		if err == nil {
-			fmt.Println("DB connection successful!")
-		}
-
-	case "sqlite3":
-		db, err = gorm.Open(sqlite.Open(database), &gorm.Config{
-			Logger:                                   logger.Default.LogMode(logger.Silent),
-			DisableForeignKeyConstraintWhenMigrating: true,
-		})
-		if err != nil {
-			log.WithError(err).Panic("panic code: 155")
 		}
 		// Only for debugging
 		if err == nil {
