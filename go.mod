@@ -1,4 +1,4 @@
-module github.com/pilinux/gorest
+module github.com/creidef/gorest
 
 go 1.19
 
